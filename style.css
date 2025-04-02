@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #f9f9f9;;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+.container.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    background-color: rgb(78, 80, 82);
+    width: 100%;
+}
+
+
+h1 {
+    flex: 1;
+    color: black;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 2px 2px 0px white, 4px 4px 0px black; /* Adds a retro shadow effect */
+    padding: 5rem 0;
+}
+
+h2 {
+    flex: 1;
+    color: white;
+    padding-bottom: 2rem;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 2px 1px 1px black;
+}
+
+img.avatar {
+    border-radius: 50%;
+    margin-bottom: 5rem;
+}
+
+.container.about-skills {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 300px 200px 400px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.title.about {
+    grid-area: 1/ 1/ 2/ 3;
+    margin-top: 5rem;
+}
+
+.text.about {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.title.skills {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+#hard-skills {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#soft-skills {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.title {
+    align-self: center;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    text-shadow: 2px 2px 0px #FFDB00, 4px 4px 0px rgb(78, 80, 82);
+}
+
+.container.about-skills > .text {
+    justify-self: center;
+    font-family: "Roboto", sans-serif;
+    color: rgb(78, 80, 82);
+    font-size: 20px;
+}
+
+.text.about {
+    padding: 3rem 15rem 3rem 15rem;
+}
+
+.text.skills {
+    padding: 3rem 0;
+}
+
+#hard-skills {
+    padding-left: 5rem;
+}
+
+#soft-skills {
+    padding-right: 5rem;
+}
+
+.sub-title {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    text-shadow: 2px 1px 0px #F72798;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.projects-main-title{
+    text-align: center;
+    margin: 3rem 0 4rem 0;
+}
+
+.container.project-showcase {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+.project {
+    flex: 1; 
+    max-width: 300px; 
+    padding: 15px;
+    margin-bottom: 4rem;
+    background-color: white; 
+    color: #333;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.project h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.project img {
+    width: 100%; 
+    height: auto; 
+    max-width: 200px; 
+    margin: 18px 0;
+    border-radius: 2px;
+}
+
+.project button {
+    padding: 8px 16px;
+    background-color: rgb(78, 80, 82);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project button:hover {
+    background-color: #1a1a1a; /* Darker on hover */
+    cursor: pointer;
+}
+
+.container.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    background-color: rgb(78, 80, 82);
+    width: 100%;
+}
+
+.footer h2 {
+    font-size: 40px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer ul {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 3rem;
+}
+
+.footer h3 {
+    color: white;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 2px 1px 1px black;
+    margin-bottom: 3rem;
+}
+
+hr {
+    border: none; 
+    border-top: 1px solid #ccc; 
+    margin: 20px auto; 
+    margin-top: 2rem;
+    width: 80%; 
+    opacity: 0.8; 
+}
+
+#soft-skills hr {
+    margin-top: 97px;
+}
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .projects-main-title {
+        margin: 0;
+    }
+
+    .container.about-skills {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .title {
+        font-size: 2.7rem;
+        padding: 5rem 0;
+    }
+
+    .sub-title {
+        font-size: 1.8rem;
+    }
+
+    .text.about {
+        padding: 0rem 4rem;
+        margin-bottom: 5rem;
+    }
+
+    #hard-skills, #soft-skills {
+        padding: 0;
+    }
+
+    #hard-skills {
+        margin-bottom: 4rem;
+    }
+
+    #soft-skills {
+        margin-bottom: 5rem;
+    }
+
+    .container.project-showcase {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px; 
+    padding: 20px; 
+    margin-bottom: 5rem;
+    }
+
+    .footer h2 {
+        font-size: 35px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+    }
+
+    .footer h3 {
+        margin-top: 3rem;
+    }
+
+    #hard-skills hr {
+        display: none;
+    }
+}
